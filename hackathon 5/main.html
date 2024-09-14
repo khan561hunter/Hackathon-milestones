@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <form id="resumeForm">
+        <h3>Personal Information</h3>
+        <label>Username: <input type="text" id="username"></label><br>
+        <label>Name: <input type="text" id="name"></label><br>
+        <label>Email: <input type="email" id="mail"></label><br>
+        <label>Phone: <input type="tel" id="number"></label><br>
+        <label>Field of Study: <input type="text" id="Field"></label><br>
+
+        <h3>Education</h3>
+        <label>School: <input type="text" id="school"></label><br>
+
+        <h3>Work Experience</h3>
+        <label>Workplace: <input type="text" id="workplace"></label><br>
+
+        <h3>Skills</h3>
+        <label>Skills: <input type="text" id="skills"></label><br><br>
+
+        <button type="button" id="generateResume">Generate Resume</button>
+    </form>
+
+    <div id="resume-output" class="hidden">
+        <div id="personal-info-output"></div>
+        <div id="education-output"></div>
+        <div id="work-experience-output"></div>
+        <div id="skills-output"></div>
+
+        <br>
+        <button id="share-link">Copy Shareable Link</button>
+        <button id="download-resume">Download Resume</button>
+        <p id="share-url"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
